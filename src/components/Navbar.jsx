@@ -1,25 +1,16 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import ThemeToggle from './ThemeToggle';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { UserAuth } from '../context/AuthContext';
+import { Link } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const { user, logout } = UserAuth();
-  const navigate = useNavigate();
 
   const handleNav = () => {
     setNav(!nav);
   };
 
-  const handleSignOut = async () => {
-    try {
-      await logout();
-      navigate('/');
-    } catch (e) {
-    }
-  };
+
 
   return (
     <div className='rounded-div flex items-center justify-between h-20 font-bold'>

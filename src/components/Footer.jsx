@@ -1,11 +1,9 @@
 import React from 'react';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import {
-  FaFacebookF,
-  FaGit,
-  FaGithub,
+  FaFacebookF, FaGithub,
   FaTiktok,
-  FaTwitter,
+  FaTwitter
 } from 'react-icons/fa';
 import ThemeToggle from './ThemeToggle';
 
